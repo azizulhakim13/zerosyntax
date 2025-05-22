@@ -54,98 +54,93 @@
     <header>
         <!-- Navbar for Hero Section -->
         <div id="navbar" class="navbar py-3">
-            <div class="container d-flex justify-content-between align-items-center">
-                <!-- Logo -->
-                <a href="index.html">
-                    <img src="assets/img/logo-white.svg" alt="zerosyntax" />
-                </a>
-
-                <!-- Desktop Nav -->
-                <div class="d-none d-xl-flex justify-content-between align-items-center gap-md-4 gap-3">
-                    <!-- Dropdown -->
-                    <div class="dropdown">
-                        <button
-                            class="btn fs-5 navs-link border-0 text-white fw-normal d-flex align-items-center gap-3 bg-transparent"
-                            type="button" id="productDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                            <i class="bi bi-chevron-down rotate-icon" id="productChevron"></i>
-                        </button>
-                        <div class="dropdown-menu border-0 shadow rounded-4 p-3 mt-2" aria-labelledby="productDropdown"
-                            style="min-width: 320px">
-                            <a href="#"
-                                class="d-flex align-items-start gap-3 text-decoration-none text-dark p-2 rounded">
-                                <div class="bg-light rounded-circle d-flex align-items-center justify-content-center"
-                                    style="width: 40px; height: 40px">
-                                    <i class="bi bi-sun fs-5 text-primary"></i>
-                                </div>
-                                <div>
-                                    <div class="fw-semibold text-heading">ZMorning</div>
-                                    <div class="text-muted small">Smart daily planning</div>
-                                </div>
-                            </a>
-                        </div>
+          <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <a href="index.html">
+              <img src="assets/img/logo-white.svg" alt="zerosyntax" />
+            </a>
+    
+            <!-- Desktop Nav -->
+            <div class="d-none d-xl-flex justify-content-between align-items-center gap-md-4 gap-3">
+              <!-- Dropdown -->
+              <div class="dropdown">
+                <button
+                  class="btn fs-5 navs-link border-0 text-white fw-normal d-flex align-items-center gap-3 bg-transparent"
+                  type="button" id="productDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                  <i class="bi bi-chevron-down rotate-icon" id="productChevron"></i>
+                </button>
+                <div class="dropdown-menu border-0 shadow rounded-4 p-3 mt-2" aria-labelledby="productDropdown"
+                  style="min-width: 320px">
+                  <a href="#" class="d-flex align-items-center gap-3 text-decoration-none text-dark rounded">
+                    <div class="p-2 bg-light rounded-circle">
+                      <img src="assets/img/zmorning.ico" alt="zmorning" style="width: 32px; height: 32px">
                     </div>
-
-                    <a href="/#about" class="navs-link text-white py-12 mb-0">About us</a>
+                    <div>
+                      <div class="fw-semibold text-heading">ZMorning</div>
+                      <div class="text-muted small">Smart daily planning</div>
+                    </div>
+                  </a>
                 </div>
-
-                <!-- Mobile Toggle Button -->
-                <div class="d-xl-none d-flex align-items-center">
-                    <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
-                        <div>
-                            <img src="assets/img/icons/menu.svg" alt="menu" />
-                        </div>
-                    </button>
-                </div>
+              </div>
+    
+              <a href="#about" class="navs-link text-white py-12 mb-0">About us</a>
             </div>
+    
+            <!-- Mobile Toggle Button -->
+            <div class="d-xl-none d-flex align-items-center">
+              <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
+                <div>
+                  <img src="assets/img/icons/menu.svg" alt="menu" />
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
         <!-- Offcanvas Nav for Mobile -->
         <div class="offcanvas offcanvas-start d-xl-none" tabindex="-1" id="mobileOffcanvas"
-            aria-labelledby="mobileOffcanvasLabel">
-            <div class="offcanvas-header bg-primary border-bottom">
-                <h5 class="offcanvas-title" id="mobileOffcanvasLabel">
-                    <img src="assets/img/logo-white.svg" alt="Zerosyntax" style="width: 120px" />
-                </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-
-            <div class="offcanvas-body px-0">
-                <ul class="nav flex-column gap-2">
-                    <!-- Products Dropdown (simulated) -->
-                    <li class="nav-item">
-                        <button class="btn nav-link text-dark w-100 d-flex justify-content-between align-items-center"
-                            type="button" data-bs-toggle="collapse" data-bs-target="#mobileProductCollapse"
-                            aria-expanded="false" aria-controls="mobileProductCollapse">
-                            Products
-                            <i class="bi bi-chevron-down rotate-icon" id="mobileChevron"></i>
-                        </button>
-
-                        <div class="collapse mt-1" id="mobileProductCollapse">
-                            <a href="#"
-                                class="d-flex align-items-start gap-3 text-decoration-none text-dark p-2 rounded">
-                                <div class="bg-light rounded-circle d-flex align-items-center justify-content-center"
-                                    style="width: 40px; height: 40px">
-                                    <i class="bi bi-sun fs-5 text-primary"></i>
-                                </div>
-                                <div>
-                                    <div class="fw-semibold">ZMorning</div>
-                                    <div class="text-muted small">Smart daily planning</div>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-
-
-                    <!-- Other Links -->
-                    <li class="nav-item">
-                        <a href="/#about" class="nav-link text-dark">About us</a>
-                    </li>
-                </ul>
-            </div>
+          aria-labelledby="mobileOffcanvasLabel">
+          <div class="offcanvas-header bg-primary border-bottom">
+            <h5 class="offcanvas-title" id="mobileOffcanvasLabel">
+              <img src="assets/img/logo-white.svg" alt="Zerosyntax" style="width: 120px" />
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+    
+          <div class="offcanvas-body px-0">
+            <ul class="nav flex-column gap-2">
+              <!-- Products Dropdown (simulated) -->
+              <li class="nav-item">
+                <button class="btn nav-link text-dark w-100 d-flex justify-content-between align-items-center" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#mobileProductCollapse" aria-expanded="false"
+                  aria-controls="mobileProductCollapse">
+                  Products
+                  <i class="bi bi-chevron-down rotate-icon" id="mobileChevron"></i>
+                </button>
+    
+                <div class="collapse mt-1" id="mobileProductCollapse">
+                  <a href="#" class="d-flex align-items-center gap-3 text-decoration-none text-dark rounded">
+                    <div class="p-2 bg-light rounded-circle">
+                      <img src="assets/img/zmorning.ico" alt="zmorning" style="width: 32px; height: 32px">
+                    </div>
+                    <div>
+                      <div class="fw-semibold">ZMorning</div>
+                      <div class="text-muted small">Smart daily planning</div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+    
+    
+              <!-- Other Links -->
+              <li class="nav-item">
+                <a href="#about" class="nav-link text-dark">About us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </header>
     <section class="header-bg-min">
         <div class="container">
             <h1 class="display-5 text-white text-center fw-semibold mt-md-0 mt-5 mb-4">
