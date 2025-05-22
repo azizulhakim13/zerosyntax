@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zerosyntax — Intelligent Productivity Tools for Modern Professionals</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Zerosyntax — Intelligent Productivity Tools for Modern Professionals">
+  <meta name="description"
+    content="Zerosyntax is a tech company building intelligent solutions like ZMorning, a task and time management tool designed to boost productivity for professionals and teams.">
+  <meta name="keywords"
+    content="Zerosyntax, ZMorning, productivity app, task management, time tracking, calendar integration, AI task planner, smart scheduling, remote teams, work management">
+  <meta name="author" content="Zerosyntax">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://zerosyntax.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://zerosyntax.com/">
+  <meta property="og:site_name" content="Zerosyntax">
+  <meta property="og:title" content="Zerosyntax — AI-Powered Productivity Platform">
+  <meta property="og:description"
+    content="Boost your productivity with ZMorning by Zerosyntax — smart task prioritization, time tracking, and actionable insights in one seamless platform.">
+  <meta property="og:image" content="https://zerosyntax.com/assets/img/logo-white.svg
+https://zerosyntax.com/assets/img/favicon.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://zerosyntax.com/">
+  <meta name="twitter:title" content="Zerosyntax — Intelligent Productivity Tools">
+  <meta name="twitter:description"
+    content="Try ZMorning by Zerosyntax — the intelligent time and task manager designed for modern professionals.">
+  <meta name="twitter:image" content="https://zerosyntax.com/assets/img/logo-white.svg
+https://zerosyntax.com/assets/img/favicon.png">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <!-- Preload Hero Image -->
+  <link rel="preload" as="image" href="assets/img/shapes/linear-bg.webp" type="image/webp" />
+
+  <!-- Fonts and Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+
+<body>
+  <header>
+    <!-- Navbar for Hero Section -->
+    <div id="navbar" class="navbar py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <a href="index.html">
+          <img src="assets/img/logo-white.svg" alt="zerosyntax" style="width: 140px" />
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="d-none d-xl-flex justify-content-between align-items-center gap-md-4 gap-3">
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <button
+              class="btn fs-5 navs-link border-0 text-white fw-normal d-flex align-items-center gap-3 bg-transparent"
+              type="button" id="productDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+              <i class="bi bi-chevron-down rotate-icon" id="productChevron"></i>
+            </button>
+            <div class="dropdown-menu border-0 shadow rounded-4 p-3 mt-2" aria-labelledby="productDropdown"
+              style="min-width: 320px">
+              <a href="#" class="d-flex align-items-start gap-3 text-decoration-none text-dark p-2 rounded">
+                <div class="bg-light rounded-circle d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px">
+                  <i class="bi bi-sun fs-5 text-primary"></i>
+                </div>
+                <div>
+                  <div class="fw-semibold text-heading">ZMorning</div>
+                  <div class="text-muted small">Smart daily planning</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a href="#" class="navs-link text-white py-12 mb-0">About us</a>
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <div class="d-xl-none d-flex align-items-center">
+          <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
+            <div>
+              <img src="assets/img/icons/menu.svg" alt="menu" />
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Offcanvas Nav for Mobile -->
+    <div class="offcanvas offcanvas-start d-xl-none" tabindex="-1" id="mobileOffcanvas"
+      aria-labelledby="mobileOffcanvasLabel">
+      <div class="offcanvas-header bg-primary border-bottom">
+        <h5 class="offcanvas-title" id="mobileOffcanvasLabel">
+          <img src="assets/img/logo-white.svg" alt="Zerosyntax" style="width: 120px" />
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body px-0">
+        <ul class="nav flex-column gap-2">
+          <!-- Products Dropdown (simulated) -->
+          <li class="nav-item">
+            <button class="btn nav-link text-dark w-100 d-flex justify-content-between align-items-center" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mobileProductCollapse" aria-expanded="false"
+              aria-controls="mobileProductCollapse">
+              Products
+              <i class="bi bi-chevron-down rotate-icon" id="mobileChevron"></i>
+            </button>
+
+            <div class="collapse mt-1" id="mobileProductCollapse">
+              <a href="#" class="d-flex align-items-start gap-3 text-decoration-none text-dark p-2 rounded">
+                <div class="bg-light rounded-circle d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px">
+                  <i class="bi bi-sun fs-5 text-primary"></i>
+                </div>
+                <div>
+                  <div class="fw-semibold">ZMorning</div>
+                  <div class="text-muted small">Smart daily planning</div>
+                </div>
+              </a>
+            </div>
+          </li>
+
+
+          <!-- Other Links -->
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark">About us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="header-bg position-relative">
+    <div class="shape-horzontal position-absolute top-0 start-0 h-100">
+      <img class="img-fluid h-100" src="assets/img/shapes/header-shape-hor.png" alt="shape" />
+    </div>
+
+    <div class="container position-relative">
+      <div class="shape-vertical">
+        <img src="assets/img/shapes/header-shape-ver.svg" alt="shape" />
+      </div>
+
+      <h1 class="gradient-text display-1 fw-bold mb-4">
+        Simplifying Productivity for <br />Modern Businesses
+      </h1>
+
+      <p class="fsc-24 text-white mb-40">
+        We build intelligent solutions that transform how professionals manage
+        their time and tasks.
+        <br class="d-xxl-flex d-none" />
+        Our flagship product, ZMorning, helps you achieve more with less
+        effort.
+      </p>
+
+      <div class="d-flex flex-wrap gap-md-4 gap-3 align-items-center">
+        <a href="#" class="btn btn-primary">Explore our product</a>
+        <a href="#" class="btn btn-outline-light">About us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about py-xxl-100 py-lg-60 py-40">
+    <div class="container">
+      <div class="top text-center mb-md-5 mb-4">
+        <h2 class="display-5 fw-semibold mb-3">
+          About <span class="text-blue">Zerosyntax</span>
+        </h2>
+        <p class="fsc-20">
+          We are a tech company focused on creating innovative solutions that
+          help <br class="d-md-flex d-none" />
+          professionals maximize their productivity and efficiency.
+        </p>
+      </div>
+      <div class="row row-cols-md-2 gy-4">
+        <div class="col-lg-4">
+          <div class="about-card border rounded-3 py-4 px-3 h-100">
+            <div class="text-center mb-4">
+              <img src="assets/img/icons/about-1.svg" alt="About Zerosyntax" />
+            </div>
+            <div class="text-center">
+              <h3 class="fs-4 fw-semibold mb-2">Innovative Technology</h3>
+              <p class="mb-0">
+                We leverage cutting-edge technologies to create intuitive and
+                powerful solutions that solve real-world problems.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="about-card border rounded-3 py-4 px-3 h-100">
+            <div class="text-center mb-4">
+              <img src="assets/img/icons/about-2.svg" alt="About Zerosyntax" />
+            </div>
+            <div class="text-center">
+              <h3 class="fs-4 fw-semibold mb-2">User-Centric Design</h3>
+              <p class="mb-0">
+                Our products are designed with the user in mind, ensuring a seamless and enjoyable experience across all
+                platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="about-card border rounded-3 py-4 px-3 h-100">
+            <div class="text-center mb-4">
+              <img src="assets/img/icons/about-3.svg" alt="About Zerosyntax" />
+            </div>
+            <div class="text-center">
+              <h3 class="fs-4 fw-semibold mb-2">Continuous Improvement</h3>
+              <p class="mb-0">
+                We're committed to constantly improving our products based on user feedback and emerging technologies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+
+  <!-- products section -->
+  <section class="products py-xxl-100 py-lg-60 py-40">
+    <div class="container">
+      <div class="top text-center">
+        <h2 class="display-5 fw-semibold text-white mb-3">Our Products</h2>
+        <p class="fsc-20 text-white mb-lg-5 mb-40">Discover the innovative solutions that Zerosyntax offers to transform
+          your <br class="d-md-flex d-none" /> productivity.</p>
+      </div>
+      <div class="row row-cols-lg-2 gx-xxl-5 gy-5">
+        <div class="col-xxl-5">
+          <div>
+            <p class="fw-semibold text-white text-uppercase mb-0">introducing</p>
+            <h2 class="display-3 fw-semibold text-white mb-3">ZMorning</h2>
+            <p class="text-white mb-4">An intelligent task and time management system designed to help professionals
+              organize their day, track productivity, and achieve their goals more efficiently.</p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-3">
+                <span class="me-2">
+                  <img src="assets/img/icons/Check.svg" alt="check">
+                </span>
+                <span class="text-white">Smart task prioritization</span>
+              </li>
+              <li class="mb-3">
+                <span class="me-2">
+                  <img src="assets/img/icons/Check.svg" alt="check">
+                </span>
+                <span class="text-white">Automated time tracking</span>
+              </li>
+              <li class="mb-3">
+                <span class="me-2">
+                  <img src="assets/img/icons/Check.svg" alt="check">
+                </span>
+                <span class="text-white">Productivity analytics</span>
+              </li>
+              <li class="mb-3">
+                <span class="me-2">
+                  <img src="assets/img/icons/Check.svg" alt="check">
+                </span>
+                <span class="text-white">Calendar integration</span>
+              </li>
+              <li class="mb-3">
+                <span class="me-2">
+                  <img src="assets/img/icons/Check.svg" alt="check">
+                </span>
+                <span class="text-white">Available for windows, macOS, <br class="d-md-flex d-none" /> Linux</span>
+              </li>
+            </ul>
+            <div>
+              <a href="#" class="btn btn-outline-light">Try it free now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-7">
+          <div>
+            <img class="img-fluid" src="assets/img/products/morningtrack/morningtrack-dash.png" alt="ZMorning">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- products section -->
+
+  <!-- Morningtrack fetaures -->
+  <section class="features py-xxl-100 py-lg-60 py-40">
+    <div class="container">
+      <div class="top text-center mb-md-5 mb-4">
+        <h2 class="display-5 fw-semibold mb-3">
+          ZMorning <span class="text-blue">Features</span>
+        </h2>
+        <p class="fsc-20">
+          ZMorning combines intelligent task management with time tracking to <br class="d-md-flex d-none" />
+          create the ultimate productivity system.
+        </p>
+      </div>
+      <div class="row row-cols-md-2 gy-4">
+        <div class="col-xxl-3">
+          <div class="features-card rounded-3 py-4 px-3 h-100">
+            <div class="mb-4">
+              <img src="assets/img/icons/feature-1.svg" alt="features">
+            </div>
+            <div>
+              <h3 class="fs-4 fw-semibold mb-3">Innovative Technology</h3>
+              <p class="mb-0">ZMorning organizes your tasks with intelligent prioritization based on deadlines,
+                importance, and your work habits.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3">
+          <div class="features-card rounded-3 py-4 px-3 h-100">
+            <div class="mb-4">
+              <img src="assets/img/icons/feature-2.svg" alt="features">
+            </div>
+            <div>
+              <h3 class="fs-4 fw-semibold mb-3">Time Tracking</h3>
+              <p class="mb-0">Track time spent on tasks automatically and get insights into your productivity patterns.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3">
+          <div class="features-card rounded-3 py-4 px-3 h-100">
+            <div class="mb-4">
+              <img src="assets/img/icons/feature-3.svg" alt="features">
+            </div>
+            <div>
+              <h3 class="fs-4 fw-semibold mb-3">Calendar Integration</h3>
+              <p class="mb-0">ZMorning seamlessly integrates with your existing calendar to consolidate all your
+                schedules in one place.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3">
+          <div class="features-card rounded-3 py-4 px-3 h-100">
+            <div class="mb-4">
+              <img src="assets/img/icons/feature-4.svg" alt="features">
+            </div>
+            <div>
+              <h3 class="fs-4 fw-semibold mb-3">Intuitive Dashboard</h3>
+              <p class="mb-0">Get a comprehensive view of your tasks, time spent, and productivity metrics on a
+                customizable dashboard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Morningtrack fetaures -->
+
+  <!-- Morningtrack process -->
+  <section class="process py-xxl-100 py-lg-60 py-40">
+    <div class="container">
+      <div class="top text-center mb-md-5 mb-4">
+        <h2 class="display-5 fw-semibold text-white mb-3">
+          How <span class="text-blue">ZMorning</span> Works
+        </h2>
+        <p class="fsc-20 text-white">
+          ZMorning combines intelligent task management with time tracking to <br class="d-md-flex d-none" />
+          create the ultimate productivity system.
+        </p>
+      </div>
+      <div class="process-line-container">
+        <div class="process-line"></div>
+        <div class="row row-cols-md-2 gy-40">
+          <div class="col-xl-3">
+            <div class="process-card text-center h-100">
+              <div class="mb-4">
+                <img src="assets/img/icons/process-1.svg" alt="ZMorning process">
+              </div>
+              <div>
+                <h3 class="fs-4 fw-semibold text-white mb-3">Plan your day</h3>
+                <p class="text-white">Input your tasks and let ZMorning suggest the optimal schedule based on
+                  priority and estimated time.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="process-card text-center h-100">
+              <div class="mb-4">
+                <img src="assets/img/icons/process-2.svg" alt="ZMorning process">
+              </div>
+              <div>
+                <h3 class="fs-4 fw-semibold text-white mb-3">Track Your Time</h3>
+                <p class="text-white">Automatic time tracking for each task helps you understand where your time goes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="process-card text-center h-100">
+              <div class="mb-4">
+                <img src="assets/img/icons/process-3.svg" alt="ZMorning process">
+              </div>
+              <div>
+                <h3 class="fs-4 fw-semibold text-white mb-3">Analyze Results</h3>
+                <p class="text-white">Get detailed insights into your productivity patterns and identify areas for
+                  improvement.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="process-card text-center h-100">
+              <div class="mb-4">
+                <img src="assets/img/icons/process-4.svg" alt="ZMorning process">
+              </div>
+              <div>
+                <h3 class="fs-4 fw-semibold text-white mb-3">Optimize Workflow</h3>
+                <p class="text-white">Use AI-driven suggestions to continuously refine your schedule and boost
+                  productivity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Morningtrack process -->
+
+  <!-- Mornintrack -->
+  <section class="morningtrack py-xxl-100 py-lg-60 py-40">
+    <div class="container">
+      <div class="top text-center mb-md-40 mb-40">
+        <h2 class="display-5 fw-semibold mb-3">
+          How <span class="text-blue">ZMorning</span> <br /> Transforms Your Workday
+        </h2>
+        <p class="fsc-20">
+          Experience a more organized, productive, and fulfilling work life with our <br class="d-md-flex d-none" />
+          comprehensive task management system.
+        </p>
+      </div>
+      <div class="row row-cols-md-2 justify-content-between align-items-center gy-4 mb-md-0 mb-4">
+        <div class="col-xxl-5">
+          <div>
+            <h3 class="fs-4 fw-semibold mb-3">Start Your Day with Clarity</h3>
+            <p class="mb-4">ZMorning analyzes your workload and helps you plan your day effectively. No more
+              wondering what to tackle first or getting overwhelmed by your to-do list.</p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-3">
+                <span class="me-2">
+                  <img src="assets/img/icons/Check.svg" alt="check">
+                </span>
+                <span>Prioritized daily task lists</span>
+              </li>
+              <li class="mb-3">
+                <span class="me-2">
+                  <img src="assets/img/icons/Check.svg" alt="check">
+                </span>
+                <span>Morning workflow suggestions</span>
+              </li>
+              <li class="mb-3">
+                <span class="me-2">
+                  <img src="assets/img/icons/Check.svg" alt="check">
+                </span>
+                <span>Focus time scheduling</span>
+              </li>
+            </ul>
+            <div>
+              <a href="#" class="btn btn-outline-primary">Try it free now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-5">
+          <div>
+            <img class="img-fluid" src="assets/img/products/morningtrack/morningtrack-1.png" alt="morningtrack">
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-md-2 justify-content-between align-items-center mt-md-1 gy-40">
+        <div class="col-xxl-5 order-md-1 order-2">
+          <div>
+            <img class="img-fluid" src="assets/img/products/morningtrack/morningtrack-2.png" alt="morningtrack">
+          </div>
+        </div>
+        <div class="col-xxl-5 order-md-2 order-1">
+          <div>
+            <h3 class="fs-4 fw-semibold mb-3">Gain Valuable Productivity Insights</h3>
+            <p class="mb-4">Track how you spend your time automatically and identify patterns to optimize your workflow
+              and eliminate productivity blockers.</p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-3">
+                <span class="me-2">
+                  <img src="assets/img/icons/Check.svg" alt="check">
+                </span>
+                <span>Visual productivity analytics</span>
+              </li>
+              <li class="mb-3">
+                <span class="me-2">
+                  <img src="assets/img/icons/Check.svg" alt="check">
+                </span>
+                <span>Focus time tracking</span>
+              </li>
+              <li class="mb-3">
+                <span class="me-2">
+                  <img src="assets/img/icons/Check.svg" alt="check">
+                </span>
+                <span>Work habit recommendations</span>
+              </li>
+            </ul>
+            <div>
+              <a href="#" class="btn btn-outline-primary">Try it free now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Mornintrack -->
+
+  <!-- Testimonial -->
+  <section class="testimonial py-xxl-100 py-lg-60 py-40">
+    <div class="container">
+      <div class="top text-center mb-md-5 mb-4">
+        <h2 class="display-5 fw-semibold text-white mb-3">
+          What Our <span class="text-blue">Users Say</span>
+        </h2>
+        <p class="fsc-20 text-white">
+          Trusted by thousands of professionals across various industries to boost <br class="d-md-flex d-none">
+          productivity.
+        </p>
+      </div>
+      <div class="row row-cols-md-2 gy-4" data-masonry='{"percentPosition": true }' id="testimonialGrid">
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">ZMorning has completely transformed how our team manages tasks.
+                The productivity analytics are game-changing.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-1.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Sarah Johnson</h3>
+                  <p class="text-white mb-0">VP of Operations, TechFlow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">I've tried dozens of productivity tools, but ZMorning's
+                intuitive design and smart prioritization make it stand out from the crowd.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-2.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Michael Chen</h3>
+                  <p class="text-white mb-0">Software Engineer, DevSphere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">The time tracking feature alone has saved our agency countless hours
+                of manual reporting. Worth every penny.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-3.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Alex Rivera</h3>
+                  <p class="text-white mb-0">Creative Director, PixelPerfect</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">I've tried dozens of productivity tools, but ZMorning's
+                intuitive design and smart prioritization make it stand out from the crowd.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-2.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Michael Chen</h3>
+                  <p class="text-white mb-0">Software Engineer, DevSphere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">The time tracking feature alone has saved our agency countless hours
+                of manual reporting. Worth every penny.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-3.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Alex Rivera</h3>
+                  <p class="text-white mb-0">Creative Director, PixelPerfect</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">ZMorning has completely transformed how our team manages tasks.
+                The productivity analytics are game-changing. </p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-1.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Sarah Johnson</h3>
+                  <p class="text-white mb-0">VP of Operations, TechFlow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">ZMorning has completely transformed how our team manages tasks.
+                The productivity analytics are game-changing.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-1.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Sarah Johnson</h3>
+                  <p class="text-white mb-0">VP of Operations, TechFlow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">I've tried dozens of productivity tools, but ZMorning's
+                intuitive design and smart prioritization make it stand out from the crowd.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-2.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Michael Chen</h3>
+                  <p class="text-white mb-0">Software Engineer, DevSphere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">The time tracking feature alone has saved our agency countless hours
+                of manual reporting. Worth every penny.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-3.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Alex Rivera</h3>
+                  <p class="text-white mb-0">Creative Director, PixelPerfect</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">I've tried dozens of productivity tools, but ZMorning's
+                intuitive design and smart prioritization make it stand out from the crowd.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-2.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Michael Chen</h3>
+                  <p class="text-white mb-0">Software Engineer, DevSphere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">The time tracking feature alone has saved our agency countless hours
+                of manual reporting. Worth every penny.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-3.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Alex Rivera</h3>
+                  <p class="text-white mb-0">Creative Director, PixelPerfect</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">ZMorning has completely transformed how our team manages tasks.
+                The productivity analytics are game-changing. </p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-1.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Sarah Johnson</h3>
+                  <p class="text-white mb-0">VP of Operations, TechFlow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">ZMorning has completely transformed how our team manages tasks.
+                The productivity analytics are game-changing.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-1.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Sarah Johnson</h3>
+                  <p class="text-white mb-0">VP of Operations, TechFlow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">I've tried dozens of productivity tools, but ZMorning's
+                intuitive design and smart prioritization make it stand out from the crowd.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-2.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Michael Chen</h3>
+                  <p class="text-white mb-0">Software Engineer, DevSphere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">The time tracking feature alone has saved our agency countless hours
+                of manual reporting. Worth every penny.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-3.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Alex Rivera</h3>
+                  <p class="text-white mb-0">Creative Director, PixelPerfect</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">I've tried dozens of productivity tools, but ZMorning's
+                intuitive design and smart prioritization make it stand out from the crowd.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-2.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Michael Chen</h3>
+                  <p class="text-white mb-0">Software Engineer, DevSphere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">The time tracking feature alone has saved our agency countless hours
+                of manual reporting. Worth every penny.</p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-3.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Alex Rivera</h3>
+                  <p class="text-white mb-0">Creative Director, PixelPerfect</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 testimonial-item">
+          <div class="testimonial-card rounded-3 p-3">
+            <div class="mb-3">
+              <img src="assets/img/icons/quote.svg" alt="quote">
+            </div>
+            <div>
+              <p class="fst-italic text-white mb-4">ZMorning has completely transformed how our team manages tasks.
+                The productivity analytics are game-changing. </p>
+              <div class="d-flex align-items-center gap-3">
+                <div>
+                  <img class="rounded-circle" src="assets/img/testimonial/user-1.svg" alt="testimonial">
+                </div>
+                <div>
+                  <h3 class="fs-6 fw-medium text-white mb-1">Sarah Johnson</h3>
+                  <p class="text-white mb-0">VP of Operations, TechFlow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-40">
+        <button id="loadMoreTestimonials" class="btn btn-outline-light">Load more feedback</button>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial -->
+
+  <!-- Integration -->
+  <section class="integration py-xxl-100 py-lg-60 py-40">
+    <div class="container">
+      <div class="top text-center mb-md-5 mb-4">
+        <h2 class="display-5 fw-semibold mb-3">
+          Powerful <span class="text-blue">Integrations</span>
+        </h2>
+        <p class="fsc-20">
+          ZMorning seamlessly connects with your favorite tools and platforms
+        </p>
+      </div>
+      <div class="row row-cols-md-2 gy-4">
+        <div class="col-lg-4">
+          <div class="integration-card text-center border rounded-3 py-24 px-20">
+            <div class="mb-4">
+              <img src="assets/img/icons/calendar.svg" alt="Google Calendar">
+            </div>
+            <div>
+              <h3 class="fs-4 mb-3">Google Calendar</h3>
+              <p class="mb-0">Sync your Google Calendar events with ZMorning for a unified schedule view.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="integration-card text-center border rounded-3 py-24 px-20">
+            <div class="mb-4">
+              <img src="assets/img/icons/teams.svg" alt="Microsoft Teams">
+            </div>
+            <div>
+              <h3 class="fs-4 mb-3">Microsoft Teams</h3>
+              <p class="mb-0">Integrate with Teams to track meeting time and manage tasks from your conversations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="integration-card text-center border rounded-3 py-24 px-20">
+            <div class="mb-4">
+              <img src="assets/img/icons/slack.svg" alt="Slack">
+            </div>
+            <div>
+              <h3 class="fs-4 mb-3">Slack</h3>
+              <p class="mb-0">Create and manage tasks directly from Slack messages and notifications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="integration-card text-center border rounded-3 py-24 px-20">
+            <div class="mb-4">
+              <img src="assets/img/icons/git.svg" alt="GitHub">
+            </div>
+            <div>
+              <h3 class="fs-4 mb-3">GitHub</h3>
+              <p class="mb-0">Link tasks to GitHub issues and track development time automatically.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="integration-card text-center border rounded-3 py-24 px-20">
+            <div class="mb-4">
+              <img src="assets/img/icons/zapier.svg" alt="Zapier">
+            </div>
+            <div>
+              <h3 class="fs-4 mb-3">Zapier</h3>
+              <p class="mb-0">Integrate with Teams to track meeting time and manage tasks from your conversations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="integration-card text-center border rounded-3 py-24 px-20">
+            <div class="mb-4">
+              <img src="assets/img/icons/jira.svg" alt="Jira">
+            </div>
+            <div>
+              <h3 class="fs-4 mb-3">Jira</h3>
+              <p class="mb-0">Synchronize Jira issues with ZMorning for seamless project management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <p class="my-4">And many more integrations available through our API and partner ecosystem</p>
+        <div>
+          <a href="#" class="btn btn-outline-primary">View all integrations <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Integration -->
+
+  <!-- Join Us -->
+  <section class="join-us py-lg-60 py-40">
+    <div class="container">
+      <div class="top text-center">
+        <h2 class="display-5 fw-semibold text-white mb-3">Join the Zerosyntax Community</h2>
+        <p class="fsc-20 text-white mb-md-40 mb-4">Transform your productivity with ZMorning, our flagship task
+          management <br class="d-lg-flex d-none"> system trusted by thousands of professionals worldwide.</p>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center align-items-center gap-md-4 gap-3">
+        <a href="#" class="btn btn-light">Try Morningtrack free</a>
+        <a href="#" class="btn btn-outline-light">Schedule a demo</a>
+      </div>
+      <p class="text-white text-center mt-3 mb-0">No credit card required • Free 14-day trial • Cancel anytime</p>
+    </div>
+  </section>
+  <!-- Join Us -->
+
+  <!-- Footer -->
+  <section class="footer pt-lg-60 pt-5">
+    <div class="container">
+      <div class="d-lg-flex justify-content-lg-between align-items-center">
+        <div>
+          <div class="mb-4">
+            <a href="/"><img src="assets/img/logo-white.svg" alt="Zerosyntax"></a>
+          </div>
+          <div>
+            <p class="text-gray mb-0">ZeroSyntax d.o.o. Skenderpasina 1, <br> Sarajevo- 71000, Bosnia & Hergegovina</p>
+            <p class="text-gray mb-0">Company Registration: <span class="fw-semibold">4202747190000</span></p>
+          </div>
+        </div>
+        <div class="mt-lg-0 mt-5">
+          <ul class="list-unstyled d-lg-flex gap-5">
+            <li class="nav-item mb-lg-0 mb-4">
+              <a href="#" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item mb-lg-0 mb-4">
+              <a href="#" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item mb-lg-0 mb-4">
+              <a href="#" class="nav-link">FAQs</a>
+            </li>
+            <li class="nav-item mb-lg-0 mb-4">
+              <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+            </li>
+            <li class="nav-item mb-lg-0 mb-4">
+              <a href="terms-and-conditions.html" class="nav-link">Terms & Conditions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright mt-40 pt-4 pb-40">
+        <div class="d-lg-flex justify-content-lg-between align-items-center">
+          <p class="text-gray mb-lg-0 mb-4">© 2025 Zerosyntax. All rights reserved.</p>
+          <div class="d-flex flex-wrap gap-2 align-items-center">
+            <div>
+              <img src="assets/img/icons/footer/visa.svg" alt="visa">
+            </div>
+            <div>
+              <img src="assets/img/icons/footer/mastercard.svg" alt="mastercard">
+            </div>
+            <div>
+              <img src="assets/img/icons/footer/apple.svg" alt="apple">
+            </div>
+            <div>
+              <img src="assets/img/icons/footer/g-pay.svg" alt="g-pay">
+            </div>
+            <div>
+              <img src="assets/img/icons/footer/comodo.svg" alt="comodo">
+            </div>
+            <div>
+              <img src="assets/img/icons/footer/aws.svg" alt="aws">
+            </div>
+            <div>
+              <img src="assets/img/icons/footer/microsoft.svg" alt="microsoft">
+            </div>
+            <div>
+              <img src="assets/img/icons/footer/raiffeisen-bank.svg" alt="raiffeisen-bank">
+            </div>
+            <div>
+              <img src="assets/img/icons/footer/paddle.svg" alt="paddle">
+            </div>
+            <div>
+              <img src="assets/img/icons/footer/networks.svg" alt="networks">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // DESKTOP DROPDOWN
+        const desktopWrapper = document.querySelector('.dropdown');
+        const desktopChevron = document.getElementById("productChevron");
+    
+        if (desktopWrapper && desktopChevron) {
+          desktopWrapper.addEventListener('show.bs.dropdown', () => {
+            desktopChevron.classList.add('rotated');
+          });
+          desktopWrapper.addEventListener('hide.bs.dropdown', () => {
+            desktopChevron.classList.remove('rotated');
+          });
+        }
+    
+        // MOBILE COLLAPSE
+        const mobileToggle = document.querySelector('[data-bs-target="#mobileProductCollapse"]');
+        const mobileChevron = document.getElementById("mobileChevron");
+    
+        if (mobileToggle && mobileChevron) {
+          mobileToggle.addEventListener("click", function () {
+            const isExpanded = this.getAttribute("aria-expanded") === "true";
+            mobileChevron.classList.toggle("rotated", !isExpanded);
+          });
+        }
+      });
+    </script>
+    
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const grid = document.querySelector('#testimonialGrid');
+      const masonry = new Masonry(grid, {
+        itemSelector: '.testimonial-item',
+        percentPosition: true
+      });
+
+      const testimonials = document.querySelectorAll("#testimonialGrid .testimonial-item");
+      const loadMoreBtn = document.getElementById("loadMoreTestimonials");
+      const batchSize = 6;
+      let visibleCount = 0;
+
+      function updateVisibility() {
+        testimonials.forEach((item, index) => {
+          item.style.display = index < visibleCount ? "block" : "none";
+        });
+
+        if (visibleCount >= testimonials.length) {
+          loadMoreBtn.style.display = "none";
+        }
+      }
+
+      visibleCount = batchSize;
+      updateVisibility();
+      masonry.layout();
+
+      loadMoreBtn.addEventListener("click", function () {
+        visibleCount += batchSize;
+        updateVisibility();
+        masonry.layout();
+      });
+    });
+  </script>
+
+  <script>
+    let prevScrollPos = window.pageYOffset;
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function () {
+      const currentScrollPos = window.pageYOffset;
+
+      if (currentScrollPos === 0) {
+        navbar.style.top = "0";
+        navbar.classList.remove("scrolled");
+      } else {
+        if (prevScrollPos > currentScrollPos) {
+          navbar.style.top = "0";
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.style.top = "-80px";
+        }
+      }
+
+      prevScrollPos = currentScrollPos;
+    });
+  </script>
+
+
+</body>
+
+</html>

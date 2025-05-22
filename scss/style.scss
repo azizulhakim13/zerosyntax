@@ -1,0 +1,262 @@
+@import "variables";
+
+@import "bootstrap/scss/bootstrap";
+
+:root {
+  --blue: #1d3ad0;
+  --header-color-min: #434343;
+  --dark-bg: #030921;
+  --primary-color: #3e50f7;
+  --border-color: #ddd;
+  --border-color2: #1c2237;
+  --border-color3: #505050;
+  --text-gray: #c3c3c3;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.text-gray {
+  color: var(--text-gray);
+}
+
+h3 {
+  color: var(--header-color-min);
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.header-bg-min {
+  background-image: url("../../assets/img/shapes/linear-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 425px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+.header-bg {
+  background-image: url("../../assets/img/shapes/linear-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+
+  .shape-horzontal,
+  .shape-vertical {
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .navbar,
+  .header-bg .container {
+    position: relative;
+    z-index: 3;
+  }
+
+  .btn.show {
+    opacity: 1;
+  }
+
+  .navbar {
+    width: 100%;
+    top: 1.5rem;
+  }
+}
+
+.navs-link {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 20px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s ease, background-color 0.3s ease;
+  z-index: 1030;
+}
+
+#navbar.scrolled {
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+  background-color: #f8f9fc;
+  transition: background-color 0.2s ease;
+}
+
+.icon-wrap {
+  width: 36px;
+  height: 36px;
+  background-color: #e9f0ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shape-vertical {
+  position: absolute;
+  top: 28%;
+  right: 14%;
+  animation: floatY 6s ease-in-out infinite;
+}
+
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.gradient-text {
+  background: linear-gradient(90deg, #ffffff 20%, #8fa2ff 50%, #3e50f7 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.transition {
+  transition: transform 0.3s ease;
+}
+
+.rotate-icon {
+  transition: transform 0.3s ease;
+}
+.rotate-icon.rotated {
+  transform: rotate(180deg);
+}
+
+// products
+.products,
+.process,
+.testimonial {
+  background-color: var(--dark-bg);
+}
+
+// features
+.features {
+  .features-card {
+    border: 1px solid var(--border-color);
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--primary-color);
+    }
+  }
+}
+
+.process-line-container {
+  position: relative;
+}
+
+.process-line {
+  position: absolute;
+  top: 106px;
+  left: calc(12.5% + 28px);
+  right: calc(12.5% + 28px);
+  height: 6px;
+  background-color: var(--border-color2);
+  z-index: 0;
+  border-radius: 3px;
+}
+
+.process-card .mb-4 {
+  position: relative;
+  z-index: 1;
+}
+
+// testimonial-card
+.testimonial-card {
+  border: 1px solid var(--border-color3);
+}
+
+// join-us
+.join-us {
+  background-image: url("../../assets/img/shapes/linear-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// footer
+.footer {
+  background-color: var(--dark-bg);
+
+  .nav-link {
+    color: #fff;
+    opacity: 0.5;
+    transition: transform 0.4s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .copyright {
+    border-top: 1px solid var(--border-color3);
+  }
+}
+
+.rules {
+  max-width: 972px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .fsc-20 {
+    font-size: 20px;
+  }
+
+  .fsc-24 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .process-line {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .display-1 {
+    font-size: 36px;
+  }
+
+  .display-5 {
+    font-size: 24px;
+  }
+  
+  .header-bg-min {
+    height: 250px;
+  }
+}
