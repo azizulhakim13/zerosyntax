@@ -18492,6 +18492,14 @@ h3, .h3 {
   font-size: 18px;
 }
 
+.fs-14 {
+  font-size: 14px;
+}
+
+.btn-outline-light:hover {
+  color: #3E50F7;
+}
+
 .header-bg-min {
   background-image: url("../../assets/img/shapes/linear-bg.webp");
   background-size: cover;

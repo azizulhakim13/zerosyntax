@@ -54,95 +54,98 @@
     <header>
         <!-- Navbar for Hero Section -->
         <div id="navbar" class="navbar py-3">
-          <div class="container d-flex justify-content-between align-items-center">
-            <!-- Logo -->
-            <a href="index.html">
-              <img src="assets/img/logo-white.svg" alt="zerosyntax" />
-            </a>
-    
-            <!-- Desktop Nav -->
-            <div class="d-none d-xl-flex justify-content-between align-items-center gap-md-4 gap-3">
-              <!-- Dropdown -->
-              <div class="dropdown">
-                <button
-                  class="btn fs-5 navs-link border-0 text-white fw-normal d-flex align-items-center gap-3 bg-transparent"
-                  type="button" id="productDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                  Products
-                  <i class="bi bi-chevron-down rotate-icon" id="productChevron"></i>
-                </button>
-                <div class="dropdown-menu border-0 shadow rounded-4 p-3 mt-2" aria-labelledby="productDropdown"
-                  style="min-width: 320px">
-                  <a href="#" class="d-flex align-items-start gap-3 text-decoration-none text-dark p-2 rounded">
-                    <div class="bg-light rounded-circle d-flex align-items-center justify-content-center"
-                      style="width: 40px; height: 40px">
-                      <i class="bi bi-sun fs-5 text-primary"></i>
+            <div class="container d-flex justify-content-between align-items-center">
+                <!-- Logo -->
+                <a href="index.html">
+                    <img src="assets/img/logo-white.svg" alt="zerosyntax" />
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="d-none d-xl-flex justify-content-between align-items-center gap-md-4 gap-3">
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                        <button
+                            class="btn fs-5 navs-link border-0 text-white fw-normal d-flex align-items-center gap-3 bg-transparent"
+                            type="button" id="productDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                            <i class="bi bi-chevron-down rotate-icon" id="productChevron"></i>
+                        </button>
+                        <div class="dropdown-menu border-0 shadow rounded-4 p-3 mt-2" aria-labelledby="productDropdown"
+                            style="min-width: 320px">
+                            <a href="#"
+                                class="d-flex align-items-start gap-3 text-decoration-none text-dark p-2 rounded">
+                                <div class="bg-light rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px">
+                                    <i class="bi bi-sun fs-5 text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-semibold text-heading">ZMorning</div>
+                                    <div class="text-muted small">Smart daily planning</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                      <div class="fw-semibold text-heading">ZMorning</div>
-                      <div class="text-muted small">Smart daily planning</div>
-                    </div>
-                  </a>
+
+                    <a href="/#about" class="navs-link text-white py-12 mb-0">About us</a>
                 </div>
-              </div>
-    
-              <a href="#" class="navs-link text-white py-12 mb-0">About us</a>
-            </div>
-    
-            <!-- Mobile Toggle Button -->
-            <div class="d-xl-none d-flex align-items-center">
-              <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
-                <div>
-                  <img src="assets/img/icons/menu.svg" alt="menu" />
+
+                <!-- Mobile Toggle Button -->
+                <div class="d-xl-none d-flex align-items-center">
+                    <button class="border-0 bg-transparent" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
+                        <div>
+                            <img src="assets/img/icons/menu.svg" alt="menu" />
+                        </div>
+                    </button>
                 </div>
-              </button>
             </div>
-          </div>
         </div>
         <!-- Offcanvas Nav for Mobile -->
         <div class="offcanvas offcanvas-start d-xl-none" tabindex="-1" id="mobileOffcanvas"
-          aria-labelledby="mobileOffcanvasLabel">
-          <div class="offcanvas-header bg-primary border-bottom">
-            <h5 class="offcanvas-title" id="mobileOffcanvasLabel">
-              <img src="assets/img/logo-white.svg" alt="Zerosyntax" style="width: 120px" />
-            </h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-    
-          <div class="offcanvas-body px-0">
-            <ul class="nav flex-column gap-2">
-              <!-- Products Dropdown (simulated) -->
-              <li class="nav-item">
-                <button class="btn nav-link text-dark w-100 d-flex justify-content-between align-items-center" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#mobileProductCollapse" aria-expanded="false"
-                  aria-controls="mobileProductCollapse">
-                  Products
-                  <i class="bi bi-chevron-down rotate-icon" id="mobileChevron"></i>
-                </button>
-    
-                <div class="collapse mt-1" id="mobileProductCollapse">
-                  <a href="#" class="d-flex align-items-start gap-3 text-decoration-none text-dark p-2 rounded">
-                    <div class="bg-light rounded-circle d-flex align-items-center justify-content-center"
-                      style="width: 40px; height: 40px">
-                      <i class="bi bi-sun fs-5 text-primary"></i>
-                    </div>
-                    <div>
-                      <div class="fw-semibold">ZMorning</div>
-                      <div class="text-muted small">Smart daily planning</div>
-                    </div>
-                  </a>
-                </div>
-              </li>
-    
-    
-              <!-- Other Links -->
-              <li class="nav-item">
-                <a href="#" class="nav-link text-dark">About us</a>
-              </li>
-            </ul>
-          </div>
+            aria-labelledby="mobileOffcanvasLabel">
+            <div class="offcanvas-header bg-primary border-bottom">
+                <h5 class="offcanvas-title" id="mobileOffcanvasLabel">
+                    <img src="assets/img/logo-white.svg" alt="Zerosyntax" style="width: 120px" />
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body px-0">
+                <ul class="nav flex-column gap-2">
+                    <!-- Products Dropdown (simulated) -->
+                    <li class="nav-item">
+                        <button class="btn nav-link text-dark w-100 d-flex justify-content-between align-items-center"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#mobileProductCollapse"
+                            aria-expanded="false" aria-controls="mobileProductCollapse">
+                            Products
+                            <i class="bi bi-chevron-down rotate-icon" id="mobileChevron"></i>
+                        </button>
+
+                        <div class="collapse mt-1" id="mobileProductCollapse">
+                            <a href="#"
+                                class="d-flex align-items-start gap-3 text-decoration-none text-dark p-2 rounded">
+                                <div class="bg-light rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 40px; height: 40px">
+                                    <i class="bi bi-sun fs-5 text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="fw-semibold">ZMorning</div>
+                                    <div class="text-muted small">Smart daily planning</div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+
+                    <!-- Other Links -->
+                    <li class="nav-item">
+                        <a href="/#about" class="nav-link text-dark">About us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </header>
+    </header>
     <section class="header-bg-min">
         <div class="container">
             <h1 class="display-5 text-white text-center fw-semibold mt-md-0 mt-5 mb-4">
@@ -154,37 +157,57 @@
     <section class="container py-md-60 py-5">
         <div class="rules">
             <h2 class="fs-4 fw-semibold mb-4">ZeroSyntax Privacy Policy</h2>
-    
-            <p class="fs-18 mb-40">ZeroSyntax is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you use the ZeroSyntax website and services.</p>
-    
+
+            <p class="fs-18 mb-40">ZeroSyntax is committed to protecting your privacy. This Privacy Policy explains how
+                we collect, use, and share your personal information when you use the ZeroSyntax website and services.
+            </p>
+
             <h3 class="fs-5 fw-medium">1. What personal information do we collect?</h3>
-            <p class="fs-18 mb-4">We collect personal information from you when you create an account, use our services, or contact us for support. The personal information we collect may include your name, email address, mailing address, phone number, and credit card information.</p>
-    
+            <p class="fs-18 mb-4">We collect personal information from you when you create an account, use our services,
+                or contact us for support. The personal information we collect may include your name, email address,
+                mailing address, phone number, and credit card information.</p>
+
             <h3 class="fs-5 fw-medium">2. How do we use your personal information?</h3>
-            <p class="fs-18 mb-4">ZeroSyntax reserves the right to update or modify these Terms at any time. If ZeroSyntax makes any changes to the Terms, ZeroSyntax will post the updated Terms on the ZeroSyntax website. Your continued use of the ZeroSyntax website after ZeroSyntax posts any updated Terms constitutes your acceptance of the updated Terms.</p>
-    
+            <p class="fs-18 mb-4">ZeroSyntax reserves the right to update or modify these Terms at any time. If
+                ZeroSyntax makes any changes to the Terms, ZeroSyntax will post the updated Terms on the ZeroSyntax
+                website. Your continued use of the ZeroSyntax website after ZeroSyntax posts any updated Terms
+                constitutes your acceptance of the updated Terms.</p>
+
             <h3 class="fs-5 fw-medium">3. Use of the ZeroSyntax Website</h3>
-            <p class="fs-18 mb-4">We use your personal information to provide you with our services, to communicate with you, and to improve our services. We may also use your personal information to send you marketing emails or to target you with advertising.</p>
-    
+            <p class="fs-18 mb-4">We use your personal information to provide you with our services, to communicate with
+                you, and to improve our services. We may also use your personal information to send you marketing emails
+                or to target you with advertising.</p>
+
             <h3 class="fs-5 fw-medium">4. How do we share your personal information?</h3>
-            <p class="fs-18 mb-4">We do not sell or rent your personal information to third parties. We may share your personal information with third-party service providers who help us to provide our services. For example, we may share your personal information with a payment processor to process your credit card payments.</p>
-    
+            <p class="fs-18 mb-4">We do not sell or rent your personal information to third parties. We may share your
+                personal information with third-party service providers who help us to provide our services. For
+                example, we may share your personal information with a payment processor to process your credit card
+                payments.</p>
+
             <h3 class="fs-5 fw-medium">How do we protect your personal information?</h3>
-            <p class="fs-18 mb-4">We use a variety of security measures to protect your personal information from unauthorized access, use, or disclosure. For example, we use encryption to protect your credit card information and we store your personal information on secure servers.</p>
-    
+            <p class="fs-18 mb-4">We use a variety of security measures to protect your personal information from
+                unauthorized access, use, or disclosure. For example, we use encryption to protect your credit card
+                information and we store your personal information on secure servers.</p>
+
             <h3 class="fs-5 fw-medium">6. Your choices</h3>
-            <p class="fs-18 mb-4">You have the right to access, correct, or delete your personal information. You may also opt out of receiving marketing emails from us. To exercise any of these rights, please contact us at [email protected]</p>
-    
+            <p class="fs-18 mb-4">You have the right to access, correct, or delete your personal information. You may
+                also opt out of receiving marketing emails from us. To exercise any of these rights, please contact us
+                at [email protected]</p>
+
             <h3 class="fs-5 fw-medium">7. Changes to this Privacy Policy</h3>
-            <p class="fs-18 mb-4">We may update this Privacy Policy from time to time. If we make any changes to this Privacy Policy, we will post the updated Privacy Policy on our website.</p>
-    
+            <p class="fs-18 mb-4">We may update this Privacy Policy from time to time. If we make any changes to this
+                Privacy Policy, we will post the updated Privacy Policy on our website.</p>
+
             <h3 class="fs-5 fw-medium">8. Contact Us</h3>
-            <p class="fs-18 mb-4">If you have any questions about this Privacy Policy, please contact us at [email protected]</p>
-    
+            <p class="fs-18 mb-4">If you have any questions about this Privacy Policy, please contact us at [email
+                protected]</p>
+
             <h3 class="fs-5 fw-medium">9. Last Updated: October 11, 2023</h3>
-            <p class="fs-18 mb-4">This privacy policy is based on the ethical hacker learning path that you provided. It is important to note that this is just a sample privacy policy and you may need to modify it to fit your specific needs.</p>
+            <p class="fs-18 mb-4">This privacy policy is based on the ethical hacker learning path that you provided. It
+                is important to note that this is just a sample privacy policy and you may need to modify it to fit your
+                specific needs.</p>
         </div>
-    </section>    
+    </section>
 
     <!-- Footer -->
     <section class="footer pt-lg-60 pt-5">
@@ -204,10 +227,10 @@
                 <div class="mt-lg-0 mt-5">
                     <ul class="list-unstyled d-lg-flex gap-5">
                         <li class="nav-item mb-lg-0 mb-4">
-                            <a href="#" class="nav-link">Products</a>
+                            <a href="/#zmorning" class="nav-link">Products</a>
                         </li>
                         <li class="nav-item mb-lg-0 mb-4">
-                            <a href="#" class="nav-link">About us</a>
+                            <a href="/#about" class="nav-link">About us</a>
                         </li>
                         <li class="nav-item mb-lg-0 mb-4">
                             <a href="#" class="nav-link">FAQs</a>
@@ -241,10 +264,10 @@
                             <img src="assets/img/icons/footer/comodo.svg" alt="comodo">
                         </div>
                         <div>
-                            <img src="assets/img/icons/footer/aws.svg" alt="aws">
+                            <img src="assets/img/icons/footer/aws.svg" alt="aws" style="width: 64px;">
                         </div>
                         <div>
-                            <img src="assets/img/icons/footer/microsoft.svg" alt="microsoft">
+                            <img src="assets/img/icons/footer/microsoft.svg" alt="microsoft" style="width: 80px;">
                         </div>
                         <div>
                             <img src="assets/img/icons/footer/raiffeisen-bank.svg" alt="raiffeisen-bank">
@@ -269,33 +292,33 @@
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              // DESKTOP DROPDOWN
-              const desktopWrapper = document.querySelector('.dropdown');
-              const desktopChevron = document.getElementById("productChevron");
-          
-              if (desktopWrapper && desktopChevron) {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // DESKTOP DROPDOWN
+            const desktopWrapper = document.querySelector('.dropdown');
+            const desktopChevron = document.getElementById("productChevron");
+
+            if (desktopWrapper && desktopChevron) {
                 desktopWrapper.addEventListener('show.bs.dropdown', () => {
-                  desktopChevron.classList.add('rotated');
+                    desktopChevron.classList.add('rotated');
                 });
                 desktopWrapper.addEventListener('hide.bs.dropdown', () => {
-                  desktopChevron.classList.remove('rotated');
+                    desktopChevron.classList.remove('rotated');
                 });
-              }
-          
-              // MOBILE COLLAPSE
-              const mobileToggle = document.querySelector('[data-bs-target="#mobileProductCollapse"]');
-              const mobileChevron = document.getElementById("mobileChevron");
-          
-              if (mobileToggle && mobileChevron) {
+            }
+
+            // MOBILE COLLAPSE
+            const mobileToggle = document.querySelector('[data-bs-target="#mobileProductCollapse"]');
+            const mobileChevron = document.getElementById("mobileChevron");
+
+            if (mobileToggle && mobileChevron) {
                 mobileToggle.addEventListener("click", function () {
-                  const isExpanded = this.getAttribute("aria-expanded") === "true";
-                  mobileChevron.classList.toggle("rotated", !isExpanded);
+                    const isExpanded = this.getAttribute("aria-expanded") === "true";
+                    mobileChevron.classList.toggle("rotated", !isExpanded);
                 });
-              }
-            });
-          </script>
+            }
+        });
+    </script>
     <script>
         let prevScrollPos = window.pageYOffset;
         const navbar = document.getElementById("navbar");
